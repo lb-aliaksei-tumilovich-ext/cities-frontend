@@ -1,0 +1,100 @@
+/* CitiesComponent's private CSS styles */
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+
+}
+page-size{
+  float: left;
+  text-align: center;
+  position: relative;
+
+}
+input {
+  padding: .5rem;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  display: block;
+}
+
+input:focus {
+  outline: #336699 auto 1px;
+}
+
+li {
+  list-style-type: none;
+}
+
+select {
+  min-width: 4rem;
+  max-width: 8rem;
+  border: 1px solid #777;;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+.image-text {
+  display: block;
+  font-size: medium;
+  color: white;
+  padding: 0.4em 0 0 0.4em;
+  background-color: #405061;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: center;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+  width: 10rem;
+}
+.image {
+  display: block;
+  border:4px solid #1b6b6f;
+  padding:0.4em 0 0 0.4em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  width: 10rem;
+  height: 5rem;
+}
+.image-link{
+  display: block;
+  color: #333;
+  text-decoration: none;
+  background-color: #ffffff;
+  margin: .5em;
+  padding: .3em 0;
+  border-radius: 4px;
+  width: 10rem;
+  height: 8rem;
+}
+
+.image-link:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+}
+
+.image-link:active {
+  background-color: #525252;
+  color: #fafafa;
+}
+.custom-select{
+  display: inline-block;
+}
+pagination-controls {
+  display: inline-block;
+}
+.paginator div{
+  display: inline-block;
+}

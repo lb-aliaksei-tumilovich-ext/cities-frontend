@@ -1,0 +1,31 @@
+<div id="search-component">
+  <label for="search-box">City search</label>
+  <input #searchBox id="search-box" (input)="search(searchBox.value)">
+</div>
+<ul>
+  <li *ngFor="let city of cities | paginate: {
+                  itemsPerPage: pageSize,
+                  currentPage: page,
+                  totalItems: totalItems}">
+    <a class="image-link" routerLink="/cities/{{city.id}}">
+      <img class="image" src="{{city.url}}" alt="{{city.name}}">
+      <span class="image-text"> {{city.name}} </span>
+    </a>
+  </li>
+</ul>
+<div *ngIf="!cities.length">NO DATA</div>
+
+<div class="paginator">
+  <pagination-controls class="paginator"
+    previousLabel="Prev"
+    nextLabel="Next"
+    (pageChange)="onTableDataChange($event)"></pagination-controls>
+  <div class="page-size">
+    <select class="custom-select" (change)="onTableSizeChange($event)">
+      <option *ngFor="let size of pageSizes" [ngValue]="size">
+        {{ size }}
+      </option>
+    </select>
+  </div>
+</div>
+
